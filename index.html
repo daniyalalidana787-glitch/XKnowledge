@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="KnowledgeX — free competitive examination preparation for Pakistan and international exams.">
+<title>KnowledgeX — Learn. Practice. Improve. Succeed.</title>
+<style>
+:root{--navy:#101b3d;--navy2:#172653;--blue:#536dfe;--violet:#7658e8;--ink:#18213a;--muted:#6f7890;--line:#e7eaf2;--bg:#f6f7fb;--white:#fff;--green:#159b72;--gold:#e6b84b;--shadow:0 14px 40px rgba(25,38,80,.08)}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;color:var(--ink);background:var(--bg);line-height:1.55}button,input,select{font:inherit}button{cursor:pointer}.shell{min-height:100vh}.topbar{height:76px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(5vw,22px);position:sticky;top:0;z-index:20}.brand{display:flex;align-items:center;gap:11px;font-weight:850;font-size:22px;color:var(--navy);letter-spacing:-.6px}.brandmark{width:37px;height:37px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--violet));display:grid;place-items:center;color:white;font-weight:900}.nav{display:flex;align-items:center;gap:25px}.nav a{color:#58627b;text-decoration:none;font-size:14px;font-weight:650}.nav a:hover{color:var(--blue)}.actions{display:flex;gap:10px;align-items:center}.btn{border:0;border-radius:11px;padding:11px 17px;font-weight:750;transition:.2s}.btn:hover{transform:translateY(-1px)}.primary{background:linear-gradient(120deg,var(--blue),var(--violet));color:white;box-shadow:0 8px 18px #536dfe35}.secondary{background:#eef0ff;color:#4455cf}.outline{background:white;border:1px solid var(--line);color:var(--ink)}.small{padding:8px 12px;font-size:13px}.hero{background:radial-gradient(circle at 85% 15%,#344b91 0,#1c2b5c 30%,#101b3d 72%);color:white;padding:82px max(5vw,22px) 76px;overflow:hidden;position:relative}.hero:after{content:"";position:absolute;width:440px;height:440px;border:1px solid #ffffff18;border-radius:50%;right:-100px;top:-130px;box-shadow:0 0 0 55px #ffffff08,0 0 0 110px #ffffff05}.hero-inner{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;position:relative;z-index:1}.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid #ffffff35;background:#ffffff12;padding:7px 12px;border-radius:30px;font-size:12px;font-weight:750;color:#dce4ff}.dot{width:7px;height:7px;border-radius:50%;background:#63e0b0}.hero h1{font-size:clamp(42px,5.5vw,66px);line-height:1.06;letter-spacing:-2.6px;margin:20px 0}.hero h1 span{color:#a9b6ff}.hero p{font-size:17px;color:#d3daf1;max-width:600px;margin:0 0 27px}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap}.hero .outline{background:#ffffff12;border-color:#ffffff45;color:#fff}.hero-note{font-size:12px;color:#aeb9dc;margin-top:18px}.hero-panel{background:#fff;color:var(--ink);border-radius:22px;padding:22px;box-shadow:0 24px 60px #050b2250;transform:rotate(1deg)}.panel-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.panel-top strong{font-size:15px}.pill{background:#e9f8f2;color:#14835f;padding:5px 9px;border-radius:20px;font-size:11px;font-weight:800}.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.mini-stat{border:1px solid var(--line);padding:14px;border-radius:14px}.mini-stat span{display:block;color:var(--muted);font-size:11px}.mini-stat b{font-size:24px;color:var(--navy)}.progress{height:7px;border-radius:20px;background:#edf0f7;overflow:hidden;margin-top:9px}.progress i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--violet));border-radius:20px}.panel-bottom{margin-top:14px;background:#f5f6ff;border-radius:13px;padding:13px;font-size:12px;color:#5d6681}.container{max-width:1180px;margin:auto;padding:0 max(5vw,22px)}.section{padding:65px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:25px}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:1.6px;color:var(--blue);font-weight:850}.section h2{font-size:31px;letter-spacing:-.9px;margin:5px 0;color:var(--navy)}.sub{color:var(--muted);margin:0;max-width:650px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:19px;box-shadow:0 5px 20px #1b2a4a06}.exam-card{transition:.2s;cursor:pointer}.exam-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#cbd1ff}.iconbox{height:43px;width:43px;border-radius:13px;background:#eef0ff;display:grid;place-items:center;font-size:21px;margin-bottom:14px}.exam-card h3{font-size:16px;margin:0 0 5px;color:var(--navy)}.exam-card p{font-size:12px;color:var(--muted);margin:0 0 13px;min-height:37px}.card-foot{display:flex;justify-content:space-between;align-items:center;color:#64708b;font-size:11px;font-weight:700}.tag{background:#f0f2ff;color:#5664cf;border-radius:20px;padding:4px 8px}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature .iconbox{background:#f1efff}.feature h3{font-size:16px;margin:0 0 6px}.feature p{font-size:13px;color:var(--muted);margin:0}.practice-wrap{background:#101b3d;color:#fff;border-radius:23px;padding:34px;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.practice-wrap h2{color:#fff;font-size:30px;margin:7px 0}.practice-wrap p{color:#c6cfe9}.practice-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}.practice-list div{background:#ffffff12;border:1px solid #ffffff20;padding:12px;border-radius:12px;font-size:13px}.practice-list b{display:block;font-size:18px}.quiz-section{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.quizbox{max-width:820px;margin:auto;background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;box-shadow:var(--shadow)}.quizmeta{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;font-weight:750}.quizbox h3{font-size:20px;color:var(--navy);margin:20px 0}.options{display:grid;gap:10px}.option{padding:13px 15px;border:1px solid var(--line);border-radius:12px;text-align:left;background:#fff;color:var(--ink)}.option:hover{border-color:#aab4ff;background:#f8f8ff}.option.selected{border-color:var(--blue);background:#f0f2ff}.option.correct{border-color:#43b58c;background:#effaf5}.option.wrong{border-color:#e58b8b;background:#fff3f3}.quiz-controls{display:flex;justify-content:space-between;align-items:center;margin-top:18px;gap:10px}.feedback{font-size:13px;font-weight:700;margin-top:12px;min-height:20px}.footer{background:#0e1733;color:#c8d0e7;padding:40px max(5vw,22px)}.footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}.footer .brand{color:#fff}.footer p{font-size:12px;color:#9da9c8}.footer a{color:#c8d0e7;text-decoration:none;font-size:13px}.modal-backdrop{position:fixed;inset:0;background:#08112dcc;display:none;place-items:center;z-index:50;padding:18px}.modal-backdrop.show{display:grid}.modal{background:#fff;border-radius:20px;padding:25px;width:min(430px,100%);box-shadow:0 25px 80px #0005}.modal h2{margin:0 0 5px;color:var(--navy)}.modal p{font-size:13px;color:var(--muted)}.field{display:grid;gap:6px;margin:13px 0}.field label{font-size:12px;font-weight:750}.field input,.field select{border:1px solid var(--line);padding:12px;border-radius:10px;width:100%;outline:none}.field input:focus,.field select:focus{border-color:var(--blue)}.notice{background:#fff8e7;color:#8c6415;padding:10px 12px;border-radius:10px;font-size:12px;margin-top:12px}.hidden{display:none!important}.toast{position:fixed;bottom:20px;right:20px;background:#172653;color:#fff;padding:12px 17px;border-radius:12px;box-shadow:var(--shadow);display:none;z-index:80;font-size:13px}.toast.show{display:block}.dashboard-preview{display:none}.dashboard-preview.show{display:block}.dash-layout{display:grid;grid-template-columns:220px 1fr;gap:20px}.dash-side{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px;height:max-content}.dash-side button{display:block;width:100%;border:0;background:transparent;text-align:left;padding:10px;border-radius:9px;color:#59637c;font-weight:700;font-size:13px}.dash-side button.active{background:#eef0ff;color:#4d5dd2}.dash-main{min-width:0}.dash-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.dash-stats .card b{font-size:25px;color:var(--navy)}.dash-stats .card span{display:block;font-size:11px;color:var(--muted)}.empty{padding:30px;text-align:center;color:var(--muted);background:#fff;border:1px dashed #cdd2e0;border-radius:14px}.mobile-menu{display:none}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr}.hero-panel{max-width:520px}.grid{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:repeat(2,1fr)}.dash-stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.nav{display:none}.topbar{height:66px}.brand{font-size:19px}.hero{padding-top:55px}.hero h1{letter-spacing:-1.5px}.section{padding:48px 0}.section-head{display:block}.grid{grid-template-columns:1fr 1fr;gap:10px}.exam-card{padding:14px}.features{grid-template-columns:1fr}.practice-wrap{grid-template-columns:1fr;padding:24px}.dash-layout{grid-template-columns:1fr}.dash-side{display:flex;overflow:auto;gap:5px}.dash-side button{white-space:nowrap;width:auto}.dash-stats{grid-template-columns:1fr 1fr}.quizbox{padding:17px}.quiz-controls{flex-wrap:wrap}.hero-panel{transform:none}.section h2{font-size:26px}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="topbar">
+  <div class="brand"><div class="brandmark">K</div>KnowledgeX</div>
+  <nav class="nav"><a href="#exams">Examinations</a><a href="#features">Features</a><a href="#practice">Practice</a><a href="#about">About</a></nav>
+  <div class="actions"><button class="btn outline small" onclick="openAuth('login')">Log in</button><button class="btn primary small" onclick="openAuth('signup')">Get started</button></div>
+</header>
+
+<main id="homeView">
+<section class="hero">
+ <div class="hero-inner">
+  <div>
+   <div class="eyebrow"><span class="dot"></span> FREE LEARNING • GLOBAL EXAM PREPARATION</div>
+   <h1>Your ambition.<br><span>Your preparation.</span><br>Your future.</h1>
+   <p>Prepare for competitive examinations with focused practice, clear explanations and tools that help you improve — one question at a time.</p>
+   <div class="hero-buttons"><button class="btn primary" onclick="document.querySelector('#practice').scrollIntoView({behavior:'smooth'})">Start practicing →</button><button class="btn outline" onclick="document.querySelector('#exams').scrollIntoView({behavior:'smooth'})">Explore examinations</button></div>
+   <div class="hero-note">A free learning platform for students in Pakistan and around the world.</div>
+  </div>
+  <div class="hero-panel">
+   <div class="panel-top"><strong>Your learning snapshot</strong><span class="pill">SAMPLE PREVIEW</span></div>
+   <div class="stat-grid">
+    <div class="mini-stat"><span>Question bank</span><b>800+</b><div class="progress"><i style="width:75%"></i></div></div>
+    <div class="mini-stat"><span>Exam categories</span><b>12</b><div class="progress"><i style="width:60%"></i></div></div>
+    <div class="mini-stat"><span>Practice anytime</span><b>24/7</b><div class="progress"><i style="width:100%"></i></div></div>
+    <div class="mini-stat"><span>Access</span><b>Free</b><div class="progress"><i style="width:100%"></i></div></div>
+   </div>
+   <div class="panel-bottom">✨ Build confidence through consistent practice. Preview figures are illustrative, not live platform statistics.</div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="exams"><div class="container">
+ <div class="section-head"><div><div class="kicker">Choose your path</div><h2>Examinations for every ambition</h2><p class="sub">Explore preparation areas for Pakistan's competitive exams and international academic assessments.</p></div><button class="btn secondary small" onclick="showToast('More examination categories will be added as the question bank grows.')">View all categories</button></div>
+ <div class="grid" id="examGrid"></div>
+</div></section>
+
+<section class="section" id="features" style="background:#fff"><div class="container">
+ <div class="section-head"><div><div class="kicker">Built for better preparation</div><h2>Everything you need to keep improving</h2><p class="sub">A focused study experience with practical tools for independent learners.</p></div></div>
+ <div class="features">
+  <div class="card feature"><div class="iconbox">🎯</div><h3>Focused MCQ practice</h3><p>Practice by subject and difficulty, then review explanations to understand the concept.</p></div>
+  <div class="card feature"><div class="iconbox">📊</div><h3>Progress tracking</h3><p>See your practice history and scores in your personal learning dashboard.</p></div>
+  <div class="card feature"><div class="iconbox">🧠</div><h3>Learn from mistakes</h3><p>Review incorrect answers and revisit bookmarked questions.</p></div>
+  <div class="card feature"><div class="iconbox">🌍</div><h3>Global exam pathways</h3><p>Explore Pakistan-based and international examination categories in one place.</p></div>
+  <div class="card feature"><div class="iconbox">📚</div><h3>Clear explanations</h3><p>Use explanations as a starting point for deeper study and verification.</p></div>
+  <div class="card feature"><div class="iconbox">🔓</div><h3>Free access</h3><p>KnowledgeX is designed as a free learning platform without paid student tiers.</p></div>
+ </div>
+</div></section>
+
+<section class="section" id="practice"><div class="container">
+ <div class="practice-wrap">
+  <div><div class="kicker" style="color:#aeb9ff">Daily practice</div><h2>Small steps.<br>Stronger results.</h2><p>Try a sample question now. Choose an answer, submit it and read the explanation. No account is needed for this demo.</p><button class="btn primary" onclick="document.querySelector('#quiz').scrollIntoView({behavior:'smooth'})">Try a sample question</button></div>
+  <div class="practice-list"><div><b>01</b> Select a topic</div><div><b>02</b> Answer carefully</div><div><b>03</b> Check explanation</div><div><b>04</b> Keep learning</div></div>
+ </div>
+</div></section>
+
+<section class="section quiz-section" id="quiz"><div class="container">
+ <div class="section-head"><div><div class="kicker">KnowledgeX quick check</div><h2>Test your knowledge</h2><p class="sub">A short sample quiz to demonstrate the practice experience.</p></div></div>
+ <div class="quizbox">
+  <div class="quizmeta"><span id="qCategory">GENERAL KNOWLEDGE</span><span id="qCounter">Question 1 of 5</span></div>
+  <div class="progress"><i id="quizProgress" style="width:20%"></i></div>
+  <h3 id="questionText"></h3>
+  <div class="options" id="options"></div>
+  <div class="feedback" id="feedback"></div>
+  <div class="quiz-controls"><button class="btn outline small" id="prevBtn" onclick="prevQuestion()" disabled>← Previous</button><span id="scoreLabel" style="font-size:12px;color:#6f7890"></span><button class="btn primary small" id="nextBtn" onclick="nextQuestion()">Next question →</button></div>
+ </div>
+</div></section>
+
+<section class="section" id="about"><div class="container" style="text-align:center"><div class="kicker">Our purpose</div><h2>Preparation should be accessible to everyone.</h2><p class="sub" style="margin:0 auto">KnowledgeX aims to make structured examination preparation easier to access, understand and practice — wherever a learner is starting from.</p></div></section>
+</main>
+
+<section class="section dashboard-preview" id="dashboardView"><div class="container">
+ <div class="section-head"><div><div class="kicker">Your workspace</div><h2 id="dashWelcome">Welcome to KnowledgeX</h2><p class="sub">Your personal learning overview. This local demo profile is stored only in this browser.</p></div><button class="btn outline small" onclick="logout()">Log out</button></div>
+ <div class="dash-layout">
+  <aside class="dash-side"><button class="active">▦ Dashboard</button><button onclick="document.querySelector('#exams').scrollIntoView()">▤ Examinations</button><button onclick="document.querySelector('#quiz').scrollIntoView()">✓ MCQ Practice</button><button onclick="showBookmarks()">☆ Bookmarks</button><button onclick="showToast('Profile editing will be available after backend authentication is connected.')">◉ My Profile</button></aside>
+  <div class="dash-main">
+   <div class="dash-stats">
+    <div class="card"><span>Questions attempted</span><b id="dashAttempted">0</b></div>
+    <div class="card"><span>Correct answers</span><b id="dashCorrect">0</b></div>
+    <div class="card"><span>Accuracy</span><b id="dashAccuracy">—</b></div>
+    <div class="card"><span>Bookmarks</span><b id="dashBookmarks">0</b></div>
+   </div>
+   <div class="card" style="margin-top:16px"><h3 style="margin:0 0 10px">Recent activity</h3><div id="activity" class="empty">Complete the sample quiz to see your activity here.</div></div>
+  </div>
+ </div>
+</div></section>
+
+<footer class="footer"><div class="footer-inner"><div><div class="brand"><div class="brandmark">K</div>KnowledgeX</div><p>Learn. Practice. Improve. Succeed.</p><p>© 2026 KnowledgeX. Learning for everyone.</p></div><div><b>Explore</b><p><a href="#exams">Examinations</a></p><p><a href="#practice">MCQ Practice</a></p></div><div><b>Account</b><p><a href="#" onclick="openAuth('login');return false">Log in</a></p><p><a href="#" onclick="openAuth('signup');return false">Create account</a></p></div></div></footer>
+</div>
+
+<div class="modal-backdrop" id="authModal" onclick="if(event.target===this)closeAuth()"><div class="modal">
+ <button onclick="closeAuth()" style="float:right;border:0;background:none;font-size:22px;color:#7b849a">×</button>
+ <div class="brand" style="margin-bottom:18px"><div class="brandmark">K</div>KnowledgeX</div>
+ <h2 id="authTitle">Welcome back</h2><p id="authSub">Sign in to your learning workspace.</p>
+ <div id="authForm">
+  <div class="field" id="nameField"><label>Full name</label><input id="authName" placeholder="Your name"></div>
+  <div class="field"><label>Email address</label><input id="authEmail" type="email" placeholder="you@example.com"></div>
+  <div class="field"><label>Password</label><input id="authPassword" type="password" placeholder="At least 8 characters"></div>
+  <button class="btn primary" style="width:100%" onclick="demoAuth()">Continue</button>
+  <div class="notice">Demo mode: this preview does not create a real account or send email. Connect Supabase and Google OAuth before public launch.</div>
+ </div>
+ <button class="btn outline" style="width:100%;margin-top:12px" onclick="showToast('Google sign-in requires Supabase and Google OAuth configuration.')">G&nbsp; Continue with Google</button>
+ <p style="text-align:center;margin-top:15px"><a href="#" id="switchAuth" onclick="switchAuthMode();return false" style="color:#536dfe;font-weight:750">Create an account</a></p>
+</div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const exams=[
+ {name:"CSS",region:"Pakistan",desc:"Central Superior Services examination preparation.",icon:"🏛️",subjects:"Essay • English • General Studies"},
+ {name:"PMS",region:"Pakistan",desc:"Provincial Management Services preparation.",icon:"📘",subjects:"Compulsory • Optional subjects"},
+ {name:"NTS",region:"Pakistan",desc:"Aptitude, analytical and subject-based practice.",icon:"📝",subjects:"Verbal • Quantitative • Analytical"},
+ {name:"FPSC / PPSC",region:"Pakistan",desc:"Federal and provincial recruitment tests.",icon:"🏢",subjects:"General Knowledge • Subject tests"},
+ {name:"SAT",region:"International",desc:"Academic readiness and admission test practice.",icon:"🎓",subjects:"Reading • Writing • Mathematics"},
+ {name:"GRE",region:"International",desc:"Graduate-level admissions test preparation.",icon:"📚",subjects:"Verbal • Quantitative • Writing"},
+ {name:"IELTS / TOEFL",region:"International",desc:"English language proficiency preparation.",icon:"🌐",subjects:"Reading • Listening • Writing"},
+ {name:"General Aptitude",region:"Global",desc:"Reasoning and general knowledge practice.",icon:"💡",subjects:"Logic • Numerical • Verbal"}
+];
+document.getElementById('examGrid').innerHTML=exams.map((e,i)=>`<article class="card exam-card" onclick="selectExam('${e.name.replace(/'/g,"\\'")}')"><div class="iconbox">${e.icon}</div><div class="card-foot"><span class="tag">${e.region}</span><span>Explore ↗</span></div><h3 style="margin-top:12px">${e.name}</h3><p>${e.desc}</p><div class="card-foot"><span>${e.subjects}</span></div></article>`).join('');
+function selectExam(name){showToast(name+' selected. Exam-specific question sets will be added to the live database.');document.querySelector('#practice').scrollIntoView({behavior:'smooth'})}
+const questions=[
+ {cat:"GENERAL KNOWLEDGE",q:"Which organization is responsible for maintaining international peace and security?",opts:["World Bank","United Nations","World Trade Organization","International Monetary Fund"],a:1,exp:"The United Nations, established in 1945, has the maintenance of international peace and security among its primary purposes."},
+ {cat:"PAKISTAN AFFAIRS",q:"In which year did Pakistan become a member of the United Nations?",opts:["1945","1947","1948","1950"],a:1,exp:"Pakistan joined the United Nations on 30 September 1947."},
+ {cat:"WORLD GEOGRAPHY",q:"Which is the largest ocean on Earth?",opts:["Atlantic Ocean","Indian Ocean","Pacific Ocean","Arctic Ocean"],a:2,exp:"The Pacific Ocean is the largest and deepest of Earth's oceanic divisions."},
+ {cat:"EVERYDAY SCIENCE",q:"Which gas do plants primarily absorb during photosynthesis?",opts:["Oxygen","Nitrogen","Carbon dioxide","Hydrogen"],a:2,exp:"Plants absorb carbon dioxide and use light energy to convert it, along with water, into sugars during photosynthesis."},
+ {cat:"INTERNATIONAL AFFAIRS",q:"Where is the headquarters of the International Court of Justice?",opts:["Geneva","New York","The Hague","Vienna"],a:2,exp:"The International Court of Justice is based at the Peace Palace in The Hague, Netherlands."}
+];
+let qIndex=0,selected={},submitted={},score=0;
+function renderQuestion(){let q=questions[qIndex];document.getElementById('qCategory').textContent=q.cat;document.getElementById('qCounter').textContent=`Question ${qIndex+1} of ${questions.length}`;document.getElementById('questionText').textContent=q.q;document.getElementById('quizProgress').style.width=((qIndex+1)/questions.length*100)+'%';document.getElementById('options').innerHTML=q.opts.map((o,i)=>`<button class="option ${selected[qIndex]===i?'selected':''} ${submitted[qIndex]!==undefined&&i===q.a?'correct':''} ${submitted[qIndex]!==undefined&&selected[qIndex]===i&&i!==q.a?'wrong':''}" onclick="chooseOption(${i})" ${submitted[qIndex]!==undefined?'disabled':''}><b>${String.fromCharCode(65+i)}.</b> ${o}</button>`).join('');document.getElementById('feedback').textContent=submitted[qIndex]===undefined?'':(selected[qIndex]===q.a?'Correct! ':'Not quite. ')+q.exp;document.getElementById('feedback').style.color=selected[qIndex]===q.a?'#159b72':'#b35b5b';document.getElementById('prevBtn').disabled=qIndex===0;document.getElementById('nextBtn').textContent=qIndex===questions.length-1?'Finish quiz':'Next question →';document.getElementById('scoreLabel').textContent=`${Object.keys(submitted).length} / ${questions.length} answered`}
+function chooseOption(i){if(submitted[qIndex]!==undefined)return;selected[qIndex]=i;renderQuestion()}
+function nextQuestion(){if(submitted[qIndex]===undefined){if(selected[qIndex]===undefined){showToast('Please select an answer first.');return}submitted[qIndex]=true;if(selected[qIndex]===questions[qIndex].a)score++;renderQuestion();return}if(qIndex<questions.length-1){qIndex++;renderQuestion()}else{showToast(`Quiz completed: ${score} out of ${questions.length} correct.`);saveActivity();}}
+function prevQuestion(){if(qIndex>0){qIndex--;renderQuestion()}}
+function saveActivity(){let data=JSON.parse(localStorage.getItem('kxActivity')||'[]');data.unshift({date:new Date().toLocaleDateString(),score,total:questions.length});localStorage.setItem('kxActivity',JSON.stringify(data.slice(0,5)));updateDash()}
+renderQuestion();
+function openAuth(mode){document.getElementById('authModal').classList.add('show');setAuthMode(mode)}
+function closeAuth(){document.getElementById('authModal').classList.remove('show')}
+let authMode='login';
+function setAuthMode(mode){authMode=mode;document.getElementById('authTitle').textContent=mode==='login'?'Welcome back':'Create your account';document.getElementById('authSub').textContent=mode==='login'?'Sign in to your learning workspace.':'Start your free KnowledgeX learning journey.';document.getElementById('nameField').classList.toggle('hidden',mode==='login');document.getElementById('switchAuth').textContent=mode==='login'?'Create an account':'Already have an account? Log in'}
+function switchAuthMode(){setAuthMode(authMode==='login'?'signup':'login')}
+function demoAuth(){let email=document.getElementById('authEmail').value.trim(),name=document.getElementById('authName').value.trim()||email.split('@')[0];if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){showToast('Enter a valid email address.');return}if(document.getElementById('authPassword').value.length<8){showToast('Use a password with at least 8 characters.');return}if(authMode==='signup'&&!document.getElementById('authName').value.trim()){showToast('Enter your name.');return}localStorage.setItem('kxDemoUser',JSON.stringify({name,email}));closeAuth();showDashboard(name);showToast('Demo preview opened. No real account was created.')}
+function showDashboard(name){document.getElementById('homeView').classList.add('hidden');document.getElementById('dashboardView').classList.add('show');document.getElementById('dashWelcome').textContent='Welcome, '+name;window.scrollTo(0,0);updateDash()}
+function logout(){localStorage.removeItem('kxDemoUser');document.getElementById('dashboardView').classList.remove('show');document.getElementById('homeView').classList.remove('hidden');window.scrollTo(0,0)}
+function updateDash(){let a=JSON.parse(localStorage.getItem('kxActivity')||'[]'),attempted=a.reduce((n,x)=>n+x.total,0),correct=a.reduce((n,x)=>n+x.score,0),b=JSON.parse(localStorage.getItem('kxBookmarks')||'[]');document.getElementById('dashAttempted').textContent=attempted;document.getElementById('dashCorrect').textContent=correct;document.getElementById('dashAccuracy').textContent=attempted?Math.round(correct/attempted*100)+'%':'—';document.getElementById('dashBookmarks').textContent=b.length;document.getElementById('activity').innerHTML=a.length?a.map(x=>`<p style="margin:6px 0;text-align:left">Sample quiz · ${x.date} <b style="float:right">${x.score}/${x.total}</b></p>`).join(''):'Complete the sample quiz to see your activity here.'}
+function showBookmarks(){showToast('Bookmarking will be enabled when the question bank is connected to your account.')}
+let toastTimer;function showToast(msg){let t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),3300)}
+</script>
+</body>
+</html>
